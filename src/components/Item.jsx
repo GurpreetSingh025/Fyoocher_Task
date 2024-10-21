@@ -6,14 +6,15 @@ import "react-datepicker/dist/react-datepicker.css";
 import SubmitContainer from './SubmitContainer';
 export default function Item() {
     let [name , setName] = useState("") ;
-    let [quantity , setQuantity] = useState("") ;
-    let [unitPrice , setUnitPrice] = useState("") ;
+    let [quantity , setQuantity] = useState(0) ;
+    let [unitPrice , setUnitPrice] = useState(0) ;
     const [startDate, setStartDate] = useState(new Date());
     let data = {
         name ,
         quantity ,
         unitPrice ,
-        startDate
+        startDate ,
+        fromItem : true 
     }
   return (
     <>

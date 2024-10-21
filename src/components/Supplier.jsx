@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect , useRef} from 'react'
 import "../styles/supplier.css" ;
 import SubmitContainer from './SubmitContainer';
 
@@ -9,7 +9,32 @@ export default function Supplier() {
     let [state, setState] = useState("");
     let [city, setCity] = useState("");
     let [mail, setMail] = useState("");
-    let [mail2, setMail2] = useState("");
+    let [mail2, setMail2] = useState(""); 
+    let mail1Valid = useRef(false) ;
+    let mail2Valid = useRef(false) ;
+    let data = {
+        name ,
+        company ,
+        country ,
+        state ,
+        city ,
+        mail ,
+        mail2 ,
+        mail1Valid ,
+        mail2Valid        
+    }
+    useEffect(function(){
+        const regex = /^[a-zA-Z0-9_.+\-]+[\x40][a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/; 
+        if(regex.test(mail)){
+            mail1Valid.current = true ;
+        }
+    } , [mail]) 
+    useEffect(function(){
+        const regex = /^[a-zA-Z0-9_.+\-]+[\x40][a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/; 
+        if(regex.test(mail2)){
+            mail2Valid.current = true ;
+        }
+    } , [mail2])
     return (
         <>
         <div className='supplier-cont'>
@@ -60,7 +85,7 @@ export default function Supplier() {
                 </div>
             </div>
         </div>
-        <SubmitContainer/>
+        <SubmitContainer data={data}/>
         </>
     )
 }

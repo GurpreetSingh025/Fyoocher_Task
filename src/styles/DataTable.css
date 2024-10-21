@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.family700{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 ;
+    font-style: normal;
+}
+.family500{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500 ;
+    font-style: normal;
+}
+.family400{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+}
+.centerIt{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+.data-table-header{
+    display: flex ;
+    justify-content: space-between;
+}
+.clearBtn{
+   padding : 10px 16px 10px 16px ;
+}
