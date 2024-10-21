@@ -9,11 +9,12 @@ export default function Item() {
     let [quantity , setQuantity] = useState(0) ;
     let [unitPrice , setUnitPrice] = useState(0) ;
     const [startDate, setStartDate] = useState(new Date());
+    let [date , setDate] = useState("") ;
     let data = {
         name ,
         quantity ,
         unitPrice ,
-        startDate ,
+        date ,
         fromItem : true 
     }
   return (
@@ -42,14 +43,15 @@ export default function Item() {
                  <p className='normalText family500'>Date Of Submission</p>
                  {/* <input type="text" className='form-field' placeholder='Enter Unit Price' value={date} onChange={(e) => setDate(e.target.value)}  /> */ }
                  <DatePicker className='form-field' selected={startDate} onChange={(date) => {
-                    console.log(date)
-                    setStartDate(date)
+                    setStartDate(date) ;
+                    setDate(`${date.getMonth() + 1} | ${date.getDate()} | ${date.getFullYear()}`) ;
+
                  }} />
                  <p className='family400 field-message-text'>Format MM/DD/YY</p>
            </div>
        </div>
     </div>
-    <SubmitContainer data={data}/>
+    <SubmitContainer data={data} caller="item"/>
     </>
   )
 }

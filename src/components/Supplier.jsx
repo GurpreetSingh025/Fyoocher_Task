@@ -5,8 +5,8 @@ import SubmitContainer from './SubmitContainer';
 export default function Supplier() {
     let [name, setName] = useState("");
     let [company, setCompany] = useState("");
-    let [country, setCountry] = useState("");
-    let [state, setState] = useState("");
+    let [country, setCountry] = useState("usa");
+    let [state, setState] = useState("florida");
     let [city, setCity] = useState("");
     let [mail, setMail] = useState("");
     let [mail2, setMail2] = useState(""); 
@@ -85,7 +85,7 @@ export default function Supplier() {
                 </div>
             </div>
         </div>
-        <SubmitContainer data={data}/>
+        <SubmitContainer data={data} caller="supplier"/>
         </>
     )
 }

@@ -11,6 +11,12 @@
     font-weight: 500 ;
     font-style: normal;
 }
+.family600{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600 ;
+    font-style: normal;
+}
 .family400{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -28,4 +34,63 @@
 }
 .clearBtn{
    padding : 10px 16px 10px 16px ;
+}
+.container {
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.header h1 {
+    font-size: 18px;
+}
+.header button {
+    padding: 8px 16px;
+    background-color: #fff;
+    color: #000 ;
+    border: 1px solid #D0D5DD ;
+    border-radius: 8px;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+}
+th, td {
+    padding: 8px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+th {
+    color: #6b7280;
+}
+.table-row td{
+   text-wrap : nowrap ;
+   font-size: 14px ;
+}
+.table-row td:first-child .table-text{
+    position: relative ;
+    bottom : 2px ;
+}
+.table-checkbox{
+    display: inline-block ;
+    height : 20px ;
+    width: 20px ;
+    border-radius : 6px ;
+    border : 1px solid #D0D5DD ;
+    margin-right : 10px ;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+.tableHeaderCont th{
+    font-size: 12px ;
 }
