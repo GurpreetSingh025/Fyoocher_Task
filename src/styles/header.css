@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.headerCont{
+   height : 80px ;
+   width : 100vw ;
+   padding : 20px ;
+   background-color: #007AFF ;
+   display: flex ;
+   justify-content: space-between;
+}
+.headerCont .title-cont{
+    display: flex ;
+    gap : 20px ;    
+}
+.headerCont .title-cont .title-cir{
+    height : 40px ;
+    width : 40px ;
+    border-radius : 50% ;
+    background-color: #fff ;
+}
+.text-white{
+    color : #fff ;
+}
+.centerIt{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
+.headerCont .title-cont .title-name-cont p{
+    font-size: 20px ;
+}
+.family{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500 ;
+    font-style: normal;
+}

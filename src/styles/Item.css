@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.family700{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700 ;
+    font-style: normal;
+}
+.family500{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500 ;
+    font-style: normal;
+}
+.family400{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+}
+.field-message-text{
+    color : rgba(0,0,0,0.5) ;
+    font-size: 12px ;
+}
+.normalText{
+    color : #000 ;
+    font-size : 14px ;
+}
+.item-cont{
+    display: flex ;
+    flex-direction: column ;
+    gap : 20px ;
+}
+.title p{
+    font-size: 40px ;
+}
+.item-form-cont{
+    padding : 27px  ;
+    background-color: #EBEEFD ;
+    box-shadow: 0px 4px 4px -1px  rgba(12,12,13,0.10) ;
+    border-radius : 16px ;
+    display: grid ;
+    grid-template-columns: auto auto ;
+    column-gap: 80px ;
+    row-gap: 40px ;
+    margin-bottom: 20px ;
+}
+.form-title{
+    text-align: center ;
+}
+.form-field-cont{
+    display: flex ;
+    flex-direction: column ;
+    gap : 9px ;
+}
+.form-field{
+    width : 478px ;
+    height : 36px ;
+    background-color: #fff ;
+    border-radius: 6px ;
+    border : 1px solid rgba(0,0,0,0.2) ;
+    padding : 0px 15px 0px 15px ;
+}
+.form-field::placeholder , .form-field::-moz-placeholder{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400 ;
+    font-style: normal;
+    color : rgba(0,0,0,0.5) ;
+}
+.centerIt{
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+}
